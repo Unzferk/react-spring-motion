@@ -1,0 +1,41 @@
+.framer-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.butt {
+  margin: 8px 0 8px 0;
+  width: 150px;
+  height: 48px;
+  background-color: transparent;
+  border-color: black;
+  border-style: double;
+  border-radius: 24px;
+}
+.butt:hover {
+  cursor: pointer;
+  background-color: cadetblue;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  width: 80%;
+  background-color: transparent;
+}

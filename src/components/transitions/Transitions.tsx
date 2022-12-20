@@ -7,12 +7,17 @@ import {
 } from "@react-spring/web";
 
 import styles from "./styles.module.css";
+import Bubble from "../Bubble/bubble";
+import FramerExperimental from "../framer-experimental/FramerExperimental";
+import FramerPageOne from "../../pages/framer-page-one/FramerPageOne";
 
 const pages: ((
   props: AnimatedProps<{ style: CSSProperties }>
 ) => React.ReactElement)[] = [
   ({ style }) => (
-    <animated.div style={{ ...style, background: "lightpink" }}>1</animated.div>
+    <animated.div>
+      <FramerPageOne />
+    </animated.div>
   ),
   ({ style }) => (
     <animated.div style={{ ...style, background: "lightblue" }}>2</animated.div>

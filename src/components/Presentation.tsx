@@ -2,6 +2,7 @@ import React, { useState, useCallback, useRef, useEffect } from "react";
 import logo from "../logo.svg";
 import { animated, useSpring } from "@react-spring/web";
 import { useTransition } from "@react-spring/web";
+import { motion, animate } from "framer-motion";
 import "../App.css";
 import styles from "../styles.module.css";
 
@@ -34,11 +35,11 @@ const Presentation: React.FC = () => {
     ref.current = [];
     set([]);
     ref.current.push(
-      setTimeout(() => set(["Simple", "Page", "Application"]), 2000)
+      setTimeout(() => set(["Simple", "Modern", "Minimalist"]), 1000)
     );
-    ref.current.push(setTimeout(() => set(["Simple", "Application"]), 5000));
+    ref.current.push(setTimeout(() => set(["Simple", "Minimalist"]), 5000));
     ref.current.push(
-      setTimeout(() => set(["Simple", "Page", "Application"]), 8000)
+      setTimeout(() => set(["Simple", "Modern", "Minimalist"]), 8000)
     );
   }, []);
 

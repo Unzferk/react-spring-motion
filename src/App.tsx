@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Bubble from "./components/Bubble/bubble";
 import Transitions from "./components/transitions/Transitions";
 import FramerExperimental from "./components/framer-experimental/FramerExperimental";
+import PresentationHero from "./pages/PresentationHero";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<FramerExperimental />} />
+          <Route path="/main" element={<PresentationHero />} />
           <Route path="bubble" element={<Bubble />} />
           <Route path="transition" element={<Transitions />} />
           <Route path="*" element={<Home />} />

@@ -4,6 +4,8 @@ import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import "./styles.css";
 import Presentation from "../components/Presentation";
 import Transitions from "../components/transitions/Transitions";
+import Nav from "../components/shared/nabvar/Nav";
+import Show from "../components/show/Show";
 
 const url = (name: string, wrap = false) =>
   `${
@@ -17,6 +19,7 @@ const PresentationHero: React.FC = () => {
 
   return (
     <div className="container">
+      <Nav></Nav>
       <Parallax ref={parallax} pages={2}>
         <ParallaxLayer
           offset={1}
@@ -35,19 +38,19 @@ const PresentationHero: React.FC = () => {
         <ParallaxLayer
           offset={0}
           speed={0.1}
-          onClick={() => parallax.current.scrollTo(1)}
+          //onClick={() => parallax.current.scrollTo(1)}
           style={{
             display: "flex",
+            flexWrap: "wrap",
+            flexDirection: "row",
             alignItems: "center",
             justifyContent: "center",
           }}
         >
-          <Presentation />
+          <Show />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={0.1}>
-          <Transitions />
-        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={0.1}></ParallaxLayer>
       </Parallax>
     </div>
   );

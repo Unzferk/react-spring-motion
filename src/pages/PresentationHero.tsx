@@ -47,7 +47,7 @@ const PresentationHero: React.FC = () => {
             justifyContent: "center",
           }}
         >
-          <Show />
+          <Show parallax={parallax} />
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0.1}></ParallaxLayer>
